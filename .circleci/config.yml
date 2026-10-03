@@ -12,7 +12,7 @@ jobs:
       - checkout
       - python/install-packages
       - run:
-          name: Install test dependencies
+          name: Install pytest
           command: pip install pytest
       - run:
           name: Run tests
