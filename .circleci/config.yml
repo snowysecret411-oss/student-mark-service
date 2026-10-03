@@ -13,7 +13,7 @@ jobs:
       - python/install-packages
       - run:
           name: Install test dependencies
-          command: pip install pytest
+          command: pip install -r requirements-dev.txt
       - run:
           name: Run tests
           command: python -m pytest --junitxml=junit.xml || ((($? == 5)) && echo 'Did not find any tests to run.')
